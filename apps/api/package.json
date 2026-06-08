@@ -1,0 +1,10 @@
+{
+  "name": "@adaptalearn/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "go run ./cmd/server",
+    "test": "go test ./...",
+    "build": "go build -o bin/server ./cmd/server"
+  }
+}

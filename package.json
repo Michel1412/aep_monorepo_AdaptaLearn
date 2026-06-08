@@ -1,0 +1,22 @@
+{
+  "name": "adaptalearn",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "dev:api": "cd apps/api && go run ./cmd/server",
+    "dev:web": "npx pnpm@9.15.0 --filter @adaptalearn/web dev",
+    "dev:mobile": "npx pnpm@9.15.0 --filter @adaptalearn/mobile start",
+    "install:deps": "npx pnpm@9.15.0 install"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
